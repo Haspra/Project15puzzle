@@ -1,13 +1,20 @@
-<!DOCTYPE HTML>
-<HTML>
-	<HEAD>
-		<META CHARSET="UTF-8">
-		<TITLE>Puzzle</TITLE>
-		<SCRIPT SRC="script/script.js"></SCRIPT>
-		<LINK REL="stylesheet" HREF="style/style.css">
-	</HEAD>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sliding Puzzle</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+ 	<script src="script/jquery-3.2.1.min.js"></script>
+</head>
+<body>
 
-	<BODY>
+	<div id="overlay">
+		<img id="logoImg" src="img/slidingPuzzle.png" alt="logo">
+		<button id="playButton">PLAY!</button>
+	</div>
+
 	<DIV ID="puzzle" ALIGN="CENTER">
 		<TABLE BORDER="3">
 			<TR>
@@ -23,5 +30,7 @@
 	<DIV ID="controls" ALIGN="CENTER">
 		<BUTTON ID="start">Start</BUTTON>		
 	</DIV>
-</BODY>
-</HTML>
+
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
