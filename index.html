@@ -4,15 +4,26 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sliding Puzzle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+	<script src="https://use.fontawesome.com/69e9bead1c.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/69e9bead1c.css" media="all">
 	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
  	<script src="script/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
+	
 	<div id="overlay">
-		<img id="logoImg" src="img/slidingPuzzle.png" alt="logo">
+		<img id="logoImg" src="images/slidingPuzzle.png" alt="logo">
 		<button id="playButton">PLAY!</button>
+		<i id="menuButton" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+		<div id="menu">
+			<div id="easy" class="mnBtn3" type="">EASY</div>
+			<div id="medium" class="mnBtn3" type="">MEDIUM</div>
+			<div id="hard" class="mnBtn3" type="">HARD</div>
+		</div>
 	</div>
 
 	<DIV ID="puzzle" ALIGN="CENTER">
