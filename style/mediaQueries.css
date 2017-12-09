@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1024px) {
+    #playButton {
+        max-width: 35%;
+        font-size: 1.4em;
+    }
+
+    #overlay > #logoImg {
+        max-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #playButton {
+        max-width: 40%;
+        font-size: 1.6em;
+        border: 7px solid #FFEBB9; 
+    }
+
+    #overlay > #logoImg {
+        max-width: 55%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fa-bars {
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0;
+    }
+
+    #playButton {
+        max-width: 40%;
+        font-size: 1.6em;
+        border: 7px solid #FFEBB9; 
+    }
+
+    #overlay > #logoImg {
+        max-width: 75%;
+    }
+   
+}
+
+@media only screen and (max-width: 320px) {
+    #overlay > #logoImg {
+        max-width: 95%;
+    }
+    
+    .fa-bars {
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0;
+    }
+
+    #menu {
+        max-width: 60%;
+    }
+
+    .mnBtn3 {
+        font-size: 2em;
+    }
+
+    #playButton {
+        max-width: 50%;
+        font-size: 1.6em;
+        border: 7px solid #FFEBB9; 
+    }
+}
+    
