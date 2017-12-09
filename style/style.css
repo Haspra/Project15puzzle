@@ -8,12 +8,9 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #6BA87C;
+    height: 100vh;
+    background: #804C4C;
     z-index: 10000;
-    display: table;
-    text-align: center;
-    justify-content: center;
 }
 
 #overlay > #logoImg {
@@ -21,36 +18,99 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 4.5em;
+    bottom: 0;
     right: 0;
     z-index: 5;
-    max-width: 45%;
+    max-width: 40%;
     transition: all .2s ease-in-out;
 }
 
 #playButton {
-    padding: .3em .8em;
-    font-size: 2.2em;
+    display: inline-block;
+    padding: .4em .8em;
+    font-size: 1.8em;
     letter-spacing: 5px;    
     border-radius: 5px;
     border: 8px solid #FFEBB9;
-    background: #6BA87C;
     color: #FFEBB9;
     font-family: 'Ranchers', cursive;
-    transition: all .25s ease-in-out;
+    transition: all .15s ease-in-out;
     cursor: pointer;
     margin: auto;
     position: absolute;
     left: 0;
-    bottom: 1.5em;
+    bottom: -150px;
     right: 0;
     z-index: 5;
-    width: 350px;
+    width: 270px;
+    font-weight: bold;
+    background: none;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
 }
 
 #playButton:hover {
-    background: #FFEBB9;
-    color: #6BA87C;
-    border: 8px solid #FFEBB9;
     transform: scale(1.05);
 }
+
+#menuButton {
+    margin: .7em;
+    color: #FFEBB9;
+    cursor: pointer;
+    text-shadow: 0 0 5px #363636;
+}
+
+#menu {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    z-index: 10005;
+    width: 250px;
+    box-shadow: 0 2px 7px 2px rgba(0,0,0,.6);
+}
+
+.mnBtn3 {
+    text-align: center;
+    width: 100%;
+    height: 33.333vh;
+    line-height: 33.333vh;
+    font-family: 'Ranchers', cursive;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    background: #FFEBB9;
+    text-transform: lowercase;
+}
+
+#easy {
+    color: #437356;
+    transition: all .25s ease-in-out;
+}
+#easy:hover{
+    background: #437356;
+    color: #FFEBB9;
+}
+#medium {
+    color: #1E4155;
+    background: #FFE1A5;
+    transition: all .25s ease-in-out;
+}
+#medium:hover{
+    background: #1E4155;
+    color: #FFE1A5;
+}
+#hard {
+    color: #B94A50;
+    transition: all .25s ease-in-out;
+}
+#hard:hover{
+    background: #B94A50;
+    color: #FFEBB9;
+}
+
