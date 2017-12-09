@@ -1,3 +1,67 @@
+/*HIDE OVERLAY*/
+
+$( "#playButton" ).click(function() {
+  $('#playButton').delay(100).animate({
+  	bottom: -500
+  }, 100, function(){
+  });
+  $( "#overlay").delay(650).animate({
+    height: "toggle"
+  }, 750, function() {
+  });
+});
+
+// MENU ANIMATIONS
+
+$('#menuButton').click(function() {
+	$("#menu").animate({
+		left: 0
+	}, 350, function(){
+	});
+
+});
+
+$("#menu").click(function() {
+	$(this).animate({
+		left: -300
+	}, 500, function(){
+	});
+});
+
+$(function(){
+	$("#easy").click(function(){
+		$("#overlay").css("background", "#437356");
+		$("#playButton").delay(700).animate({
+			bottom: 50
+		}, 200, function(){
+
+		});
+	});
+});
+$(function(){
+	$("#medium").click(function(){
+		$("#overlay").css("background", "#1E4155");
+		$("#playButton").delay(700).animate({
+			bottom: 50
+		}, 200, function(){
+
+		});
+	});
+
+});
+$(function(){
+	$("#hard").click(function(){
+		$("#overlay").css("background", "#B94A50");
+		$("#playButton").delay(700).animate({
+			bottom: 50
+		}, 200, function(){
+
+		});
+	});
+});
+
+// START GAME
+
 var moves = 0;
 var table; 
 var rows; 
@@ -32,7 +96,6 @@ function startNewGame()
   }
  
  
- 
  var arrayOfNumbers = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   
   for (var i = arrayOfNumbers.length-1; i >=0; i--) {
@@ -44,9 +107,6 @@ function startNewGame()
 	arrayOfNumbers[i] = itemAtIndex;
 }
 
-
-  
- 
   count = 0;
   for (var i = 0; i < rows; i++)
   {
@@ -57,13 +117,3 @@ function startNewGame()
       count++;
     }
 } }
-
-
-
-$( "#playButton" ).click(function() {
-  $( "#overlay" ).animate({
-    opacity: 0,
-    height: "toggle"
-  }, 1000, function() {
-  });
-});
