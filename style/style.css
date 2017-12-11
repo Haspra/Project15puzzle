@@ -129,7 +129,6 @@ p a {color: #888;}
 	padding: 10px 20px;
 	margin: 25px 2px;
 	border: 0;
-	border-radius: 4px;
 	background: #000000;
 	font: bold 14px Arial;
 	text-align: center;
@@ -138,7 +137,7 @@ p a {color: #888;}
 	color: #fff;
 }
 
-#controls button:hover{background: #003333;}
+#controls button:hover{background: #161616;}
 
 #puzzle
 {
@@ -148,7 +147,6 @@ p a {color: #888;}
 	margin: 0 auto;
 	margin-top: 80px;
 	border: 8px solid #000000;
-	border-radius: 4px;
 }
 
 #puzzle span
@@ -157,7 +155,7 @@ p a {color: #888;}
 	display: block;
 	width: 80px;
 	height: 80px;
-	border-radius: 4px;
+
 }
 
 #puzzle span.number
@@ -165,7 +163,6 @@ p a {color: #888;}
 	cursor: pointer;
 	font: bold 36px/80px Arial;
 	text-align: center;
-	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
 	color: #fff;
 }
 
