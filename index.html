@@ -1,47 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sliding Puzzle</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
-	<script src="https://use.fontawesome.com/69e9bead1c.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/69e9bead1c.css" media="all">
-	<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
- 	<script src="script/jquery-3.2.1.min.js"></script>
-</head>
-<body>
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Sliding Puzzle</TITLE>
+		<LINK REL="stylesheet" HREF="style/style.css">
+		<META http-equiv="X-UA-Compatible" CONTENT="IE=edge">
+		<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+		<LINK REL="stylesheet" HREF="css/style.css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/mediaQueries.css">
+		<SCRIPT SRC="https://use.fontawesome.com/69e9bead1c.js"></SCRIPT>
+		<LINK REL="stylesheet" HREF="https://use.fontawesome.com/69e9bead1c.css" MEDIA="all">
+		<LINK HREF="https://fonts.googleapis.com/css?family=Ranchers" REL="stylesheet">
+		<SCRIPT SRC="script/jquery-3.2.1.min.js"></SCRIPT>
+	</HEAD>
 
-	
-	<div id="overlay">
-		<img id="logoImg" src="images/slidingPuzzle.png" alt="logo">
-		<button id="playButton">PLAY!</button>
-		<i id="menuButton" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-		<div id="menu">
-			<div id="easy" class="mnBtn3" type="">EASY</div>
-			<div id="medium" class="mnBtn3" type="">MEDIUM</div>
-			<div id="hard" class="mnBtn3" type="">HARD</div>
-		</div>
-	</div>
+	<BODY>
 
-	<DIV ID="puzzle" ALIGN="CENTER">
-		<TABLE BORDER="3">
-			<TR>
-				<TD>
-					<IMG SRC="images/1.png"> <IMG SRC="images/2.png"> <IMG SRC="images/1.png"> <IMG SRC="images/2.png"> <BR>
-					<IMG SRC="images/2.png"> <IMG SRC="images/1.png"> <IMG SRC="images/2.png"> <IMG SRC="images/1.png"> <BR>
-					<IMG SRC="images/1.png"> <IMG SRC="images/2.png"> <IMG SRC="images/1.png"> <IMG SRC="images/2.png"> <BR>
-					<IMG SRC="images/2.png"> <IMG SRC="images/1.png"> <IMG SRC="images/2.png"> 
-				</TD>
-			</TR>
-		</TABLE>
-	</DIV>
-	<DIV ID="controls" ALIGN="CENTER">
+	<DIV ID="overlay">
+		<IMG ID="logoImg" SRC="images/slidingPuzzle.png" ALT="logo">
+		<BUTTON ID="playButton">PLAY!</BUTTON>
+		<I ID="menuButton" CLASS="fa fa-bars fa-2x" aria-hidden="true"></I>
+		<DIV ID="menu">
+			<DIV ID="easy" CLASS="mnBtn3" TYPE="">EASY</DIV>
+			<DIV ID="medium" CLASS="mnBtn3" TYPE="">MEDIUM</DIV>
+			<DIV ID="hard" CLASS="mnBtn3" TYPE="">HARD</DIV>
+		</DIV>
+</DIV>	
+
+	<DIV ID="puzzle"></DIV>
+	<DIV ID="controls">
 		<BUTTON ID="start">Start</BUTTON>		
 	</DIV>
 
-<script type="text/javascript" src="script/script.js"></script>
-</body>
-</html>
+	<SCRIPT SRC="script/script.js"></SCRIPT>
+</BODY>
+</HTML>
