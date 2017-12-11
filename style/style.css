@@ -130,7 +130,7 @@ p a {color: #888;}
 	margin: 25px 2px;
 	border: 0;
 	border-radius: 4px;
-	background: #001F1F;
+	background: #000000;
 	font: bold 14px Arial;
 	text-align: center;
 	text-transform: uppercase;
@@ -147,7 +147,7 @@ p a {color: #888;}
 	height: 325px;
 	margin: 0 auto;
 	margin-top: 80px;
-	border: 8px solid #001F1F;
+	border: 8px solid #000000;
 	border-radius: 4px;
 }
 
@@ -171,9 +171,9 @@ p a {color: #888;}
 
 #puzzle span.empty {background: transparent;}
 
-#puzzle span.number.light {background: #226666;}
+#puzzle span.number.light {background: #FF4300;}
 
-#puzzle span.number.dark {background: #003333;}
+#puzzle span.number.dark {background: #AF2E00;}
 
 #puzzle.animate span
 {
