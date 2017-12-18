@@ -1,37 +1,46 @@
-<!DOCTYPE HTML>
-<HTML>
-	<HEAD>
-		<META CHARSET="UTF-8">
-		<TITLE>Sliding Puzzle</TITLE>
-		<LINK REL="stylesheet" HREF="style/style.css">
-		<META http-equiv="X-UA-Compatible" CONTENT="IE=edge">
-		<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
-		<LINK REL="stylesheet" HREF="css/style.css">
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/mediaQueries.css">
-		<SCRIPT SRC="https://use.fontawesome.com/69e9bead1c.js"></SCRIPT>
-		<LINK REL="stylesheet" HREF="https://use.fontawesome.com/69e9bead1c.css" MEDIA="all">
-		<LINK HREF="https://fonts.googleapis.com/css?family=Ranchers" REL="stylesheet">
-		<SCRIPT SRC="script/jquery-3.2.1.min.js"></SCRIPT>
-	</HEAD>
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SLIDING PUZZLE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="style/mediaQueries.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="script/jquery-3.2.1.min.js"></script>
+</head>
+<body style="background-color: #DDA935">
+	
+	<div id="overlay">
+		<img id="logoImg" src="images/slidingPuzzle.png" alt="sliding puzzle">
+		<div id="down">
+			<img id="downBtn" src="images/down.png" alt="down">
+		</div>
+	</div>
 
-	<BODY>
+	<div id="controls">
+		<div class="easy"><a id="easy" href="easy.html">Easy</a></div>
+		<div class="medium"><a id="medium" href="medium.html">Medium</a></div>
+		<a id="hard" href="hard.html">Hard</a>
+	</div>
 
-	<DIV ID="overlay">
-		<IMG ID="logoImg" SRC="images/slidingPuzzle.png" ALT="logo">
-		<BUTTON ID="playButton">PLAY!</BUTTON>
-		<I ID="menuButton" CLASS="fa fa-bars fa-2x" aria-hidden="true"></I>
-		<DIV ID="menu">
-			<DIV ID="easy" CLASS="mnBtn3" TYPE="">EASY</DIV>
-			<DIV ID="medium" CLASS="mnBtn3" TYPE="">MEDIUM</DIV>
-			<DIV ID="hard" CLASS="mnBtn3" TYPE="">HARD</DIV>
-		</DIV>
-</DIV>	
-
-	<DIV ID="puzzle"></DIV>
-	<DIV ID="controls">
-		<BUTTON ID="start">Start</BUTTON>		
-	</DIV>
-
-	<SCRIPT SRC="script/script.js"></SCRIPT>
-</BODY>
-</HTML>
+<script src="script/script.js"></script>
+</body>
+</html>
