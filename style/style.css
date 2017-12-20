@@ -1,9 +1,9 @@
 /*OVERLAY*/
-
 html
 body {
     padding: 0; margin: 0;
     font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 #overlay {
@@ -26,7 +26,6 @@ body {
     right: 0;
     z-index: 5;
     max-width: 40%;
-    transition: all .2s ease-in-out;
 }
 
 #downBtn {
@@ -42,7 +41,6 @@ body {
 }
 
 /*BODY*/
-
 #controls {
     position: absolute;
     margin: auto;
@@ -58,16 +56,15 @@ body {
     color: #fff;
     border-radius: 5px;
     border: 12px solid #fff;
-    font-size: 3em;
+    font-size: 3.5em;
     padding: 1em 1.5em;
     margin: .1em;
     letter-spacing: 1px;
     transition: all .25s ease-in-out;
-    font-family: Impact, Charcoal, sans-serif;
     text-decoration: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 700;
     background: none;
     -webkit-transform: none;
     transform: none;
@@ -76,16 +73,29 @@ body {
 }
 
 /*GAME*/
-
 #time {
     color: #fff;
     font-size: 2em;
     text-align: center;
-    padding: 15px 0;
     letter-spacing: 1px;
     margin: auto;
     position: relative;
     width: 407px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 700;
+}
+#changeTime {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: auto;
+    position: relative;
+    width: 407px;
+    height: 80px;
+    line-height: 80px;
+    display: none;
 }
 
 #puzzle {
@@ -105,12 +115,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  rgba(221,169,53,.1);
+    background-color:  rgba(255,255,255,.2);
     z-index: 4000;
 }
 #butFirst img {
     position: absolute;
-    top: 0; bottom: 3em; left: 0; right: 0;
+    top: 100px; left: 0; right: 0;
     margin: auto;
     max-width: 350px;
 }
@@ -129,16 +139,16 @@ nav button {
     background-color: #0E0D0D;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    font-family: Arial, sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 3px;
     font-weight: bold;
     transition: all .25s ease-in-out;
     box-shadow: 0 0 7px 2px #0E0D0D; 
     cursor: pointer;
+    font-family: 'Dosis', sans-serif;
 }
 nav button:hover {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #start {
@@ -155,8 +165,8 @@ nav a {
 #infoImg {
     position: absolute;
     margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
-    width: 300px;
+    top: 130px; left: 0; right: 0;
+    max-width: 300px;
 }
     
 #puzzle span {
@@ -173,7 +183,8 @@ nav a {
     text-align: center;
     color: #fff;
     font-size: 2em;
-    line-height: 100px;
+    line-height: 90px;
+    font-weight: 700;
 }
 
 #puzzle span.empty {
@@ -190,8 +201,7 @@ nav a {
 #hardStyle #puzzle span.number.light {background: #B94A50;}
 #hardStyle #puzzle span.number.dark {background: #3B0003;}
 
-#puzzle.animate span
-{
+#puzzle.animate span {
     -webkit-transition: 0.1s left, 0.1s top;
     transition: 0.1s left, 0.1s top;
 }
@@ -201,10 +211,13 @@ nav a {
     width: 420px;
     height: 168px;
     margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0; bottom: 0; left: 2px; right: 0;
     position: absolute;
-    background: rgba(0,0,0,1);
-    padding: 5px;
+    background: none;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
     border-radius: 5px;
 }
 
@@ -214,7 +227,7 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  rgba(221,169,53,.1);
+    background-color:  rgba(255,255,255,.2);
     z-index: 10000;
     box-shadow: 0 0 7px 2px #0E0D0D; 
     display: none;
@@ -228,43 +241,43 @@ nav a {
     text-align: center;
     border-radius: 5px;
     border: 3px solid #fff;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #0E0D0D;
     text-transform: uppercase;
     font-size: 1.4em;
-    letter-spacing: 1px;
-    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
     font-weight: bold;
 }
 
 #gameOverlay a {
     text-decoration: none;
     height: 70px;
-    width: 200.5px;
+    width: 201px;
     text-align: center;
     line-height: 70px;
     margin-top: 5px;
     border: 3px solid #fff;
-    color: #fff;
-    background: #000;
+    color: #0E0D0D;
+    background: #fff;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-weight: 700;
     transition: all .25s ease-in-out;
     cursor: pointer;
     display: inline-block;
     border-radius: 5px;
     letter-spacing: 1px;
+    font-size: 1.3em;
 }
 #gameOverlay a:hover {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #0E0D0D;
+    border: 3px solid #0E0D0D;
 }
 .repeat {
-    margin-right: 2px;
+    margin-right: 1px;
 }
 .backToHome {
-    margin-left: 2px;
+    margin-left: 1px;
 }
       

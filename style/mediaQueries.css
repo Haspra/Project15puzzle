@@ -22,9 +22,6 @@
         margin-top: 7px;
     }
 
-    #infoImg {
-        width: 407px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -82,6 +79,11 @@
 
     #gameOverlay a {
         width: 189.5px;
+    }
+
+    #infoImg {
+        max-width: 407px;
+        top: 85px;
     }
 }
 
