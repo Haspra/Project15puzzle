@@ -78,24 +78,23 @@ $(function(){
 });
 
 // COUNTDOWN
-var timeoutHandle;
 function countdown (minutes)
 {
     var seconds=60;
-    var mins=minutes
+    var mins=minutes;
     
-    function tick ()
+    function startCountdown ()
     {
         var counter=document.getElementById("time");
-        var current_minutes=mins-1;
+        var currentMinutes=mins-1;
         seconds--;
-        counter.innerHTML=current_minutes.toString()+":"+(seconds<10?"0":"") + String(seconds);
+        counter.innerHTML=currentMinutes.toString()+":"+(seconds<10?"0":"") + String(seconds);
         if (seconds>0)
-            timeoutHandle=setTimeout(tick, 1000);
+            setTimeout(startCountdown, 1000);
         else
         {
             if (mins>1)
-               setTimeout(function () {countdown(mins-1);}, 1000);
+               setTimeout(function() {countdown(mins-1);}, 1000);
         }
 
         if (mins==1 && seconds==0)
@@ -103,22 +102,22 @@ function countdown (minutes)
           document.getElementById("winOrLose").innerHTML="TIME OUT, YOU LOSE!";
           document.getElementById('wl').style.display="block";
         }
-      }
+    }
 
-      tick();
+      startCountdown();
+
 };
 
 // GAME
 
-
+// MAIN FUNCTION
 (function()
 {
   var puzzle=document.getElementById('puzzle');
-  var state = 1;
+  var state=1;
 
   createGameboard();
   
-
   puzzle.addEventListener("click", function(e)
   {
     if (state==1)
@@ -130,7 +129,7 @@ function countdown (minutes)
   
   document.getElementById("start").addEventListener("click", mix);
   
-
+//CREATING GAMEBOARD
   function createGameboard ()
   {
     
@@ -164,6 +163,7 @@ function countdown (minutes)
     }
   }
 
+//MOVING CELLS
   function moveCell (cell)
   {
     if (cell.clasName!="empty")
@@ -200,7 +200,6 @@ function countdown (minutes)
   
   function getEmptyNearbyCell (cell)
   {
-    
     var nearby=getNearbyCells(cell);
     
     for (var i=0; i<nearby.length; i++)
@@ -210,12 +209,10 @@ function countdown (minutes)
     }
     
     return false;
-    
   }
 
   function getNearbyCells (cell)
   {
-    
     var id=cell.id.split("-");
 
     var row=parseInt(id[1]);
@@ -231,9 +228,9 @@ function countdown (minutes)
     return nearby;
   }
   
+  //CHECKING ORGANIZED GAMEBOARD
   function checkOrder ()
   {
-    
     if (getCell(3, 3).className!="empty")
       return;
   
@@ -249,12 +246,14 @@ function countdown (minutes)
 
     setTimeout(function()
     {
-    document.getElementById('wl').style.display="block";
-    document.getElementById("time").style.display="none";
-    document.getElementById("winOrLose").innerHTML="Congratulation, You Won!";
-    document.getElementById('changeTime').style.display = "block";}, 200);
+    	document.getElementById("wl").style.display="block";
+    	document.getElementById("time").style.display="none";
+    	document.getElementById("winOrLose").innerHTML="Congratulation, You Won!";
+    	document.getElementById("changeTime").style.display="block";
+    }, 200);
   }
 
+//SHUFFLE GAMING FIELDS
   function mix ()
   {  
     document.getElementById("start").style.display="none";
@@ -292,8 +291,7 @@ function countdown (minutes)
         state=1;
       }
     }, 5);
-
-}
+  }
   
 
   function rand (from, to)
