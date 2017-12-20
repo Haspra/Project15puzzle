@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SLIDING PUZZLE</title>
+	<title>Sliding Puzzle</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="style/mediaQueries.css">
@@ -24,30 +24,32 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:500,700" rel="stylesheet">
 	<script src="script/jquery-3.2.1.min.js"></script>
 </head>
-<body id="easyStyle" style="background: url(images/easy.jpg)">
+<body id="easyStyle" style="background: url(images/easy.jpg);">
 
 	<div id="butFirst">
 		<img src="images/butFirst.png" alt="butFirst">
 	</div>
-
+	
+	<div id="changeTime">&nbsp</div>
 	<div id="time">10:00</div>
 	
 	<div id="puzzle"></div>	
 	
 	<nav>
-		<button id="home"><a href="index.html">Back To Home</a></button>
-		<button id="start" class="easy">Shuffle</button>
 		<button id="info">?</button>
+		<button id="start" class="easy">Shuffle</button>
+		<button id="home"><a href="index.html">Back To Home</a></button>
 	</nav>
 
 	<img id="infoImg" src="images/info.png" alt="info">
 
 	<div id="wl">
 		<div id="gameOverlay">
-			<div id="winOrLose">Congratulations, You Won!</div>
-			<a id="rpt" class="repeat rptE">REPEAT</a>
+			<div id="winOrLose"></div>
+			<a href="easy.html" id="rpt" class="repeat rptE">REPEAT</a>
 			<a href="index.html" class="backToHome">BACK TO HOME</a>
 		</div>	
 	</div>
